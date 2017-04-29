@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Html Form
+        </title>
+    </head>
+<body>
+    <h2>Login Form</h2>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% else %}
+        <p>Welcome to the Site!</p>
+    {% endif %}
+    <form action="/" method="post">
+      <fieldset>
+        <legend>Personal information Verification</legend>
+        Name:<br>
+        <input type="text" name="name" value="Enter Name" onFocus="this.value='';"><br>
+        Age:<br>
+        <input type="text" name="age" value="Enter Age" onFocus="this.value='';"><br>
+        Favorite SoftDes Ninja:<br>
+        <input type="text" name="ninja" value="Enter Ninja" onFocus="this.value='';"><br>
+        <input type="submit" value="Finish">
+      </fieldset>
+    </form>
+</body>
+</html>
